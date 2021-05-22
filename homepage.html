@@ -8,6 +8,15 @@
 </head>
 
 <header>
+    <div class="container">
+        <form action="/" method="GET" class="form">
+            <input type="search" placeholder="Search" class="search-field" />
+            <button type="submit" class="search-button">
+                <img src="resources/search.png">
+            </button>
+        </form>
+    </div>
+
     <img src="resources/logo.png" class="logoimage" srcset="resources/logo.png 256w, resources/logo.png 512w,
         resources/logo.png 1024w, resources/logo.png 2048w" alt="Books">
 
@@ -18,7 +27,16 @@
             <li class="navlist"><a href="online.html">Online/VR</a></li>
             <li class="navlist"><a href="merchandise.html" >Merchandise</a></li>
         </ul>
+
+        <div class="login">
+            <a href="logincart.html" class="myButton">Login</a>
+        </div>
     </nav>
+
+
+
+
+
 </header>
 
 <body>
@@ -37,55 +55,6 @@
 
         </article>
 
-        <h1 id="java">Java Script Books</h1>
-        <article id="javascript">
-            <h2 class="booktitle">Java Script</h2>
-
-            <img src="JavaScript 1.jfif" class="imagebook" srcset="JavaScript 1.jfif 256w, JavaScript 1.jfif 512w,
-                    JavaScript 1.jfif 1024w, JavaScript 1.jfif 2048w" alt="JavaScript 1 image">
-
-
-            <label> Quantity:</label>
-            <select element = "number">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-            <input type="submit" value="Add to Shopping Cart">
-
-
-            <p>47.3 €</p>
-            <p class="description">Since 1996, JavaScript: The Definitive Guide has been the bible
-                for JavaScript programmersa programmers's guide and comprehensive
-                reference to the core language and to the client-side JavaScript
-                APIs defined by web browsers.</p>
-            <p class="isbn">ISBN-13: 9781449308162</p>
-        </article>
-
-        <article id="thegoodparts">
-            <h2 class="booktitle">Java Script: The good parts</h2>
-
-            <img src="Java Script 2.jfif" class="imagebook" srcset="Java Script 2.jfif 256w, Java Script 2.jfif 512w,
-                    Java Script 2.jfif 1024w, Java Script 2.jfif 2048w" alt="Java Script 2 image">
-
-            <label> Quantity:</label>
-            <select element = "number">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-            <input type="submit" value="Add to Shopping Cart">
-
-            <p>23.9 €</p>
-            <p class="description">Most programming languages contain good and bad parts, but JavaScript
-                hast more than its share of the bad, having been developed and released
-                in a hurry before it could be refined.</p>
-            <p class="isbn">ISBN-13: 0596517742</p>
-        </article>
     </section>
 
 
