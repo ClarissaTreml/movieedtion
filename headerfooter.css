@@ -19,50 +19,72 @@ li a{
     color:white;
     text-decoration: none;
 }
-li:hover a{
+
+
+
+
+.bloodimage{
     background: url("resources/bloodline.png") top center no-repeat;
-}
-.navonlist{
-    background: url("resources/bloodline.png") top center no-repeat;
-    position: absolute;
 }
 .navlist{
-    font-family: "Kristen ITC";
-    font-size: 22px;
+    font-family: "Impact";
+    font-size: 25px;
     display: inline-flex;
     padding-left: 80px;
     padding-top: 90px;
 }
 body{
-     width: 100%;
-     height: 50%;
-     padding: 10px;
-     background-color: black;
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    background-color: black;
     left:80px;
- }
+}
 footer{
-    left:0;
+    background-color: black;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width:100%;
     height: 157px;
-    background-color: black;
     color:whitesmoke;
     font-family: Calibri;
     font-size: 15px;
-    padding: 10px;
+
+
 }
 .footerheader{
-    text-align: left;
+    text-align: center;
+    border-top: darkgrey 2px solid;
+    font-family:"Arial Black" ;
+    margin-left: 5px;
 }
 .footertable{
     width: 100%;
-    text-align: left;
+    text-align: center;
+    padding:0;
 }
-td{
-    border: 1px solid red;
+.footerlink {
+    padding: 0;
+    margin-top: 0px;
+    text-align-all: left;
 }
 
+td{
+    border-top: black 1px solid ;
+}
+
+.footer-image{
+   margin-left: 90px;
+   padding-bottom: 10px;
+    padding-right: 0px;
+
+}
+
+.footer-contact{
+   margin-bottom: 30px;
+  padding-top: 0;
+
+}
 /*searchbar*/
 .container {
     width: 300px;
@@ -101,7 +123,7 @@ td{
     background:linear-gradient(to bottom, #750707 5%, #000000 100%);
     background-color:#750707;
     border-radius:5px;
-    border:1px solid #566963;
+    border:1px solid white;
     display:inline-block;
     cursor:pointer;
     color:white;
@@ -111,7 +133,7 @@ td{
     padding:11px 23px;
     text-decoration:none;
     text-shadow:0px -1px 0px #2b665e;
-    margin-left: 140px;
+    margin-left: 180px;
 
 }
 .myButton:hover {
@@ -125,8 +147,13 @@ td{
 
 /*Shopping Cart*/
 .shoppingcart{
-    float: right;
+    /*float: right;*/
     padding-top: 75px;
 }
+
+.shoppingimage {
+    padding-top: 50px;
+}
+
 
 
