@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.title{
+    color: white;
+}
+main{
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+}
+.popup{
+    position: fixed;
+    top:50%;
+}
