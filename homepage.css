@@ -17,3 +17,11 @@ main{
     position: fixed;
     top:50%;
 }
+.video1{
+    float:top;
+    width: 1200px;
+    height:400px;
+    margin-left: 100px;
+
+
+}
