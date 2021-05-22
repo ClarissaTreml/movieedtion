@@ -24,7 +24,10 @@ li a{
 
 
 .bloodimage{
-    background: url("resources/bloodline.png") top center no-repeat;
+    background: url("resources/cube.png") top right no-repeat;
+    background-size: 111px;
+
+
 }
 .navlist{
     font-family: "Impact";
