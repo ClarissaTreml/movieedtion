@@ -6,8 +6,11 @@
     color: white;
 }
 main{
-    height: 100%;
-    width: 100%;
+    top:250px;
+    left: 150px;
+    padding:10px;
+    position: absolute;
+
     color: whitesmoke;
 }
 .popup{

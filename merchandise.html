@@ -3,41 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="headerfooter.css">
+  <link rel="stylesheet" href="homepage.css">
   <title>Merchandise</title>
 </head>
 
 <header>
-  <h1 class="title">Escape Room - Movie Edition</h1>
+  <div class="container">
+    <form action="/" method="GET" class="form">
+      <input type="search" placeholder="Search" class="search-field"/>
+      <button type="submit" class="search-button">
+        <img src="resources/search.png">
+      </button>
+    </form>
+  </div>
 </header>
+
 <body>
-<img src="resources/logo.png" class="logoimage" srcset="resources/logo.png 256w, resources/logo.png 512w,
-        resources/logo.png 1024w, resources/logo.png 2048w" alt="Books">
+
 <nav>
+  <img src="resources/logo.png" class="logoimage" srcset="resources/logo.png 256w, resources/logo.png 512w,
+        resources/logo.png 1024w, resources/logo.png 2048w" alt="Logo">
 
-  <ul style="list-style-type:none">
-
-    <li class="navlist"><a href="homepage.html">Homepage</a></li>
+  <ul class="navigation" style="list-style-type:none">
+    <li class="navlist" class="navonlist"><a href="homepage.html">Homepage</a></li>
     <li class="navlist"><a href="reallife.html">Real-Life</a></li>
     <li class="navlist"><a href="online.html">Online/VR</a></li>
-    <li class="navlist"><a href="merchandise.html" >Merchandise</a></li>
+    <li class="navlist"><a href="merchandise.html">Merchandise</a></li>
+    <li class="myButton"><a href="logincart.html">Login</a></li>
+    <li class="shoppingcart">
+      <a href="logincart.html">
+        <img src="resources/shoppingcart.JPG" class="shoppingimage" srcset="resources/shoppingcart.JPG 256w, resources/shoppingcart.JPG 512w,
+        resources/shoppingcart.JPG 1024w, resources/shoppingcart.JPG 2048w" alt="Shopping Cart">
+      </a>
+    </li>
   </ul>
 </nav>
 
 <main>
+
   <section>
-    <p> This is Merchandise</p>
-    <article>
+    <h1 class="title">Merchandise</h1>
 
-    </article>
   </section>
-
 </main>
 
-
-
+<div class="popup" onclick="myFunction()"><img src="resources/newsletter.png" alt="newsletterbutton" width="70px" height="70px"></div>
 
 <footer>
-
   <table class="footertable">
     <tr>
       <th class="footerheader">Kontakt</th>
@@ -85,12 +97,9 @@
           <li class="footerlink"><a href="https://ebanking.bawagpsk.com/" target="_blank">Maestro</a></li>
           <li class="footerlink"><a href="https://www.visaeurope.at/" target="_blank">Visa</a></li>
         </ul>
-
       </td>
     </tr>
-
   </table>
-
 </footer>
 </body>
 </html>
