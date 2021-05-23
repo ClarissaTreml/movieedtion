@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.UpperContainer {
+    width: 100%;
+    position: fixed;
+    transition: background-color .5s ease;
+    z-index: 1;
+}
+
+.containerN {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.navlist::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s ease;
+}
+
+.navlist:hover::after {
+    transform: scaleX(1);
+}
+
+/* Hero Demo Content*/
+.oben {
+    width: 100%;
+    height: 100vh;
+    background: url("resources/EscapeBackground.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.oben::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+/* Hero end*/
+
+/*Introduction*/
+
+.Intro {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    color: darkred;
+    font-size: x-large;
+    text-align: center;
+}
+
+/*Movie Section*/
+
+.containerH {
+    background: black;
+    font-size: x-large;
+    color: white;
+}
+
+.HarryP {
+    background: url("https://i.pinimg.com/originals/c3/fb/f1/c3fbf1b707a9075e36af4abc520aeb74.gif") no-repeat center fixed;
+    background-size: cover;
+    height: 500px;
+
+}
+
+.containerP {
+    background: black;
+    color: white;
+    font-size: x-large;
+}
+
+.Paranormal {
+    background: url("https://thumbs.gfycat.com/HandyHealthyCaterpillar-max-1mb.gif") no-repeat center fixed;
+    background-size: cover;
+    height: 500px;
+}
+
+/*Footer*/
+
+footer{
+    background-image: url("https://64.media.tumblr.com/b3fa7fdcf60b41e17aeb20848913e199/tumblr_pmd6e6Ol7y1runoqyo6_r1_540.gifv");
+    background-size: cover;
+}
+
+td:nth-child(1) {
+    width: 15%;
+}
+
+.scrolling-active {
+    height: 15rem;
+    background-color: black;
+}
