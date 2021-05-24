@@ -1,0 +1,77 @@
+main{
+    margin-left: 150px;
+}
+h1{
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    color: white;
+    left:-80px;
+    font-size: 36px;
+}
+h2{
+    position: relative;
+    left: 300px;
+    width: 600px;
+    text-align: center;
+    padding: 10px;
+    color: lightgray;
+    font-size: 20px;
+    margin-right: 100px;
+}
+h3{
+    color: dodgerblue;
+    font-family: "Arial Black";
+    padding: 20px;
+}
+h4{
+    position: relative;
+    top:-80px;
+    color: crimson;
+    font-size: 18px;
+    font-family: "Arial Black";
+    margin-bottom: -40px;
+}
+
+li{
+    color: goldenrod;
+    list-style-type: none;
+    position: relative;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 18px;
+    font-family: "Arial Black";
+    width: 200px;
+}
+a:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.special{
+    margin: 20px;
+    position: relative;
+    color: mediumspringgreen;
+    left:1000px;
+    top: -135px;
+    line-height: 2;
+}
+.imageSize{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+}
+.forPhotos{
+    position: relative;
+    left: 190px;
+    top: -190px;
+    color: crimson;
+    text-indent: 40px;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+.stuffList{
+    position: relative;
+    top: -30px;
+    padding-bottom: 40px;
+}
