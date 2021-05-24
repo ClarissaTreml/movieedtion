@@ -33,7 +33,7 @@ h4{
     margin-bottom: -40px;
 }
 
-li{
+.filmsLi{
     color: goldenrod;
     list-style-type: none;
     position: relative;
@@ -41,12 +41,9 @@ li{
     padding: 5px;
     font-size: 18px;
     font-family: "Arial Black";
-    width: 200px;
+    width: 170px;
 }
-a:hover{
-    color: orangered;
-    cursor: pointer;
-}
+
 .special{
     margin: 20px;
     position: relative;
