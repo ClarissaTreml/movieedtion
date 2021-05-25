@@ -1,101 +1,131 @@
 *{
     margin: 0;
-    box-sizing: border-box;
-}
-header{
-    top:0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    width: 100%;
-    height: 50px;
-
-    z-index: 1;
-}
-.logoimage{
-    float: left;
-    padding:0px;
-}
-li a{
-    color:white;
-    text-decoration: none;
-}
-
-
-
-
-.bloodimage{
-    background: url("resources/cube.png") top right no-repeat;
-    background-size: 111px;
-
-
-}
-.navlist{
-    font-family: "Impact";
-    font-size: 25px;
-    display: inline-flex;
-    padding-left: 80px;
-    padding-top: 90px;
-}
-body{
-    width: 100%;
-    height: 50%;
-    padding: 10px;
-    background-color: black;
-    left:80px;
-}
-footer{
-    background-color: black;
-    bottom: 0;
-    width:100%;
-    height: 157px;
-    color:whitesmoke;
-    font-family: Calibri;
-    font-size: 15px;
-
-
-}
-.footerheader{
-    text-align: center;
-    border-top: darkgrey 2px solid;
-    font-family:"Arial Black" ;
-    margin-left: 5px;
-}
-.footertable{
-    width: 100%;
-    text-align: center;
-    padding:0;
-}
-.footerlink {
     padding: 0;
-    margin-top: 0px;
-    text-align-all: left;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+.header{
+    width: 100%;
+    height: 182px;
+    display: block;
+    background-color: black;
+    top:0;
+    position: fixed;
+}
+.inner_header{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: black;
 }
 
-td{
-    border-top: black 1px solid ;
+.inner_header .logoimage{
+    padding: 10px;
+    float: left;
+    height: 100%;
+    display: block;
+}
+.inner_header .header_third:last-child{
+    margin-right: 0;
+    padding-right: 0;
 }
 
-.footer-image{
-   margin-left: 90px;
-   padding-bottom: 10px;
+.navigation{
+    float: left;
+    height: 100%;
+}
+.navigation a{
+    height: 100%;
+    display: inline-flex;
+    float: left;
+    padding-left: 30px;
+}
+.navigation a:first-child{
+    padding-left: 100px;
+}
+.navigation a li{
+    height: 100%;
+    padding-top: 150px;
+    font-family: "Impact";
+    color: #750707;
+    font-size: 35px;
+}
+.header_buttons     {
+    color: white;
+}
+
+/*LOGIN-BUTTON*/
+
+.myButton {
+    box-shadow:inset 0px 1px 3px 0px #91b8b3;
+    background:linear-gradient(to bottom, #750707 5%, #000000 100%);
+    background-color:#750707;
+    border-radius:60px;
+
+    cursor:pointer;
+    color:white;
+    font-family:Calibri;
+    font-size:15px;
+    font-weight:bold;
+    padding:11px 15px;
+    margin-left: 200px;
+    float: left;
+
+}
+.myButton:hover {
+    background:linear-gradient(to bottom, #000000 5%, #750707 100%);
+    background-color:#000000;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+/*Shopping Cart2*/
+.myButton2 {
+    box-shadow:inset 0px 1px 3px 0px #91b8b3;
+    background:linear-gradient(to bottom, #750707 5%, #000000 100%);
+    background-color:#750707;
+    border-radius:60px;
+    display:inline-block;
+    cursor:pointer;
+    color:white;
+    font-family:Calibri;
+    font-size:15px;
+
+    padding:11px 15px;
+    margin-left: 20px;
+
+
+}
+.myButton2:hover {
+    background:linear-gradient(to bottom, #000000 5%, #750707 100%);
+    background-color:#000000;
+}
+.myButton2:active {
+    position:relative;
+    top:1px;
+}
+.cartimage{
+    height: 20px;
+    width: 20px;
+    padding-top: 5px;
+}
+
+
+
+/*SEARCH-BAR*/
+
+.container {
+    width: 90px;
+    height: 15px;
+    padding-left: 40px;
+    padding-top: 140px;
     padding-right: 0px;
 
-}
 
-.footer-contact{
-   margin-bottom: 30px;
-  padding-top: 0;
-
-}
-/*searchbar*/
-.container {
-    width: 300px;
-    height: 15px;
-    top:0;
-    float: right;
-    padding-right: 10px;
-    padding-top: 10px;
 }
 .form {
     display: flex;
@@ -106,6 +136,7 @@ td{
     padding: 10px 35px 10px 15px;
     border: none;
     border-radius: 60px;
+    margin-top: 90px;
     outline: none;
 }
 .search-button {
@@ -120,46 +151,95 @@ td{
     height: 20px;
     object-fit: cover;
 }
-/*login button*/
-.myButton {
-    box-shadow:inset 0px 1px 3px 0px #91b8b3;
-    background:linear-gradient(to bottom, #750707 5%, #000000 100%);
-    background-color:#750707;
-    border-radius:5px;
-    border:1px solid white;
-    display:inline-block;
-    cursor:pointer;
-    color:white;
-    font-family:Arial;
-    font-size:15px;
-    font-weight:bold;
-    padding:11px 15px;
-    text-decoration:none;
-    text-shadow:0px -1px 0px #2b665e;
-    margin-left: 80px;
+
+
+/*FOOTER2*/
+
+.footer {
+    border-top: darkgrey 2px solid;
+    background-color: black;
+    width: 100vw;
+    padding: 20px 0;
+    display: block;
+    overflow: hidden;
 
 }
-.myButton:hover {
-    background:linear-gradient(to bottom, #000000 5%, #750707 100%);
-    background-color:#000000;
-}
-.myButton:active {
-    position:relative;
-    top:1px;
-}
-
-/*Shopping Cart*/
-.shoppingcart{
-    /*float: right;*/
-    padding-top: 75px;
-}
-
-.shoppingimage {
-    padding-top: 50px;
-    margin-left: 50px;
+.inner_footer{
+    display: block;
+    margin: 0 auto;
     width: 100%;
-    z-index: 2;
+    height: 100%;
+
+}
+.inner_footer .footer-image{
+    padding: 40px;
+    float: left;
+    height: 100%;
+    display: block;
 }
 
+.inner_footer .footer_third{
+    width:calc(21.6666667% - 20px);
+    float: left;
+    height: 100%;
+}
+
+.inner_footer .footer_third:last-child{
+    margin-right: 0;
+    padding-right: 0;
+}
+.inner_footer .footer_third h1{
+    font-family:"Arial Black";
+    font-size: 22px;
+    position: center;
+    color: #750707;
+    display: block;
+    width: 100%;
+
+}
+.inner_footer .footer_third a{
+    font-family: Calibri;
+    font-size: 18px;
+    color: white;
+    display: block;
+    width: 100%;
 
 
+}
+.inner_footer .footer_third li{
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 450px) {
+
+    .header .inner_header{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .header .inner_header{
+        width: 90%;
+    }
+    .inner_header .logoimage,
+    .inner_header .header_third{
+        width: 100%;
+
+    }
+    .bloodimage{
+        display: none;
+    }
+
+    .footer .inner_footer{
+        width: 90%;
+    }
+    .inner_footer .footer-image,
+    .inner_footer .footer_third{
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+
+
+}

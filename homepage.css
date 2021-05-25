@@ -1,17 +1,45 @@
 *{
     margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
     box-sizing: border-box;
 }
-.title{
-    color: white;
-}
-main{
+
+body{
+    width: 100%;
     top:250px;
-    left: 150px;
-    padding:10px;
+    left: 10px;
+    background-color: black;
+    color: whitesmoke;
     position: absolute;
 
-    color: whitesmoke;
+}
+main{
+    padding: 0 70px;
+    color: white;
+
+    display: block;
+    margin: 50px;
+    align-content: center;
+
+
+
+ }
+section h1{
+    text-align: center;
+    color: #750707;
+}
+section h2{
+    font-size: 20px;
+    color: #750707;
+}
+section{
+
+}
+.qanda{
+    text-align: justify-all;
+    font-size: 16px;
 }
 .popup{
     position: fixed;
@@ -21,7 +49,35 @@ main{
     float:top;
     width: 1200px;
     height:400px;
-    margin-left: 100px;
+    margin-left: 250px;
+    -webkit-animation-play-state: running;
+}
 
+/*RESPONSIVE*/
+
+@media  (max-width: 450px) {
+    main{
+        margin:  0;
+        padding: 20px;
+        width: 100%;
+
+    }
+    body{
+        position: relative;
+        height: auto;
+        width: 100%;
+
+    }
+    .video1{
+        display: none;
+    }
+    .popup{
+        width: 5px;
+        float: top;
+        top:50px;
+
+    }
 
 }
+
+
