@@ -6,9 +6,15 @@
     box-sizing: border-box;
 
 }
+.navigation .bloodimage{
+    background: url("resources/cube.png") top right no-repeat;
+    background-size: 111px;
+    margin-top: 40px;
+}
+
 .header{
     width: 100%;
-    height: 182px;
+    height: 210px;
     display: block;
     background-color: black;
     top:0;
@@ -42,22 +48,28 @@
     display: inline-flex;
     float: left;
     padding-left: 30px;
+    font-family: "Impact", fantasy;
+    color: #750707;
+    font-size: 35px;
+    padding-top: 150px;
 }
 .navigation a:first-child{
     padding-left: 100px;
 }
-.buttons
+
 .navigation a li{
     height: 100%;
-    padding-top: 130px;
-    font-family: "Impact";
-    color: #750707;
-    font-size: 35px;
 }
-.container{
-    float: right;
-    marging-right: 20px;
+
+.buttons{
+    padding-top: 10px;
+    color: white;
 }
+
+.shopping{
+    color: white;
+}
+
 
             /*LOGIN-BUTTON*/
 
@@ -77,6 +89,10 @@
     text-decoration:none;
     text-shadow:0px -1px 0px #2b665e;
     margin-top: 130px;
+    margin-left: 150px;
+}
+.login li{
+    color: white;
 }
 .login:hover {
     background:linear-gradient(to bottom, #000000 5%, #750707 100%);
@@ -102,10 +118,15 @@
     font-family:Calibri;
     font-size:15px;
     font-weight:bold;
-    padding:11px 23px;
+    padding:10px 23px;
     text-decoration:none;
     text-shadow:0px -1px 0px #2b665e;
     margin-top: 130px;
+    margin-left: 10px;
+}
+.shopping li{
+    color: white;
+    display: inline-flex;
 }
 .shopping:hover {
     background:linear-gradient(to bottom, #000000 5%, #750707 100%);
@@ -119,8 +140,7 @@
     height: 20px;
     width: 20px;
     padding-top: 5px;
-    background-color: white;
-    color: white;
+    padding-left: 5px;
 }
 
 
@@ -128,11 +148,13 @@
             /*SEARCH-BAR*/
 
 .container {
-    width: 90px;
+    width: 250px;
     height: 15px;
-    padding-left: 40px;
-    padding-top: 120px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-top: 145px;
+    padding-right: 10px;
+    float: right;
+    margin-right: 20px;
 }
 .form {
     display: flex;
@@ -219,21 +241,76 @@
     .bloodimage{
         display: none;
     }
+    .header{
+        height: 250px;
+        margin:0;
+        padding: 0;
+        display: block;
+    }
 .header .inner_header{
     width: 100%;
-    margin-top: 30px;
+    margin:0;
+    padding: 0;
+    display: block;
 }
-.inner_header .logoimage,
-.inner_header .header_third{
-    width: 100%;
+.inner_header .logoimage{
+    position: static;
+    margin-top:20px;
 }
+.navigation{
+    margin:0;
+    padding: 0;
+}
+.navigation a{
+    margin:0;
+    padding-top: 60px;
+    padding-left: 10px;
+    font-size: medium;
+}
+.navigation a:first-child{
+    padding-left: 15px;
+}
+.buttons{
+    right: 0;
+
+}
+.login{
+
+    width: 60px;
+    padding: 5px 5px;
+    margin: 5px;
+    margin-left: 80px;
+
+}
+.shopping{
+    float: top;
+    width: 140px;
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+.shopping .cartimage{
+    display: none;
+}
+.container{
+    width: 150px;
+    float: right;
+    margin-top: 20px;
+
+}
+
+
 .footer .inner_footer{
     width: 90%;
 }
-.inner_footer .footer-image,
+.inner_footer .footer-image{
+    display: none;
+}
 .inner_footer .footer_third{
     width: 100%;
     margin-bottom: 30px;
 }
-
+    .inner_footer .footer_third h1{
+        font-size: 15px;
+        color: #750707;
+    }
 }
