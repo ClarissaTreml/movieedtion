@@ -21,7 +21,6 @@
     margin: 0 auto;
     background-color: black;
 }
-
 .inner_header .logoimage{
     padding: 10px;
     float: left;
@@ -32,10 +31,11 @@
     margin-right: 0;
     padding-right: 0;
 }
-
 .navigation{
     float: left;
     height: 100%;
+    margin-right: 0;
+    padding-right: 0;
 }
 .navigation a{
     height: 100%;
@@ -46,66 +46,72 @@
 .navigation a:first-child{
     padding-left: 100px;
 }
-
+.buttons
 .navigation a li{
     height: 100%;
-    padding-top: 150px;
+    padding-top: 130px;
     font-family: "Impact";
     color: #750707;
     font-size: 35px;
 }
-.header_buttons     {
-    color: white;
+.container{
+    float: right;
+    marging-right: 20px;
 }
 
-/*LOGIN-BUTTON*/
+            /*LOGIN-BUTTON*/
 
-.myButton {
+.login {
     box-shadow:inset 0px 1px 3px 0px #91b8b3;
     background:linear-gradient(to bottom, #750707 5%, #000000 100%);
     background-color:#750707;
     border-radius:60px;
-
+    border:1px solid #566963;
+    display:inline-block;
     cursor:pointer;
-    color:white;
+    color:#ffffff;
     font-family:Calibri;
     font-size:15px;
     font-weight:bold;
-    padding:11px 15px;
-    margin-left: 200px;
-    float: left;
-
+    padding:11px 23px;
+    text-decoration:none;
+    text-shadow:0px -1px 0px #2b665e;
+    margin-top: 130px;
 }
-.myButton:hover {
+.login:hover {
     background:linear-gradient(to bottom, #000000 5%, #750707 100%);
     background-color:#000000;
 }
-.myButton:active {
+.login:active {
     position:relative;
     top:1px;
 }
-/*Shopping Cart2*/
-.myButton2 {
+
+
+            /*Shopping Cart2*/
+
+.shopping {
     box-shadow:inset 0px 1px 3px 0px #91b8b3;
     background:linear-gradient(to bottom, #750707 5%, #000000 100%);
     background-color:#750707;
     border-radius:60px;
+    border:1px solid #566963;
     display:inline-block;
     cursor:pointer;
-    color:white;
+    color:#ffffff;
     font-family:Calibri;
     font-size:15px;
-
-    padding:11px 15px;
-    margin-left: 20px;
-
-
+    font-weight:bold;
+    padding:11px 23px;
+    text-decoration:none;
+    text-shadow:0px -1px 0px #2b665e;
+    margin-top: 130px;
 }
-.myButton2:hover {
+.shopping:hover {
     background:linear-gradient(to bottom, #000000 5%, #750707 100%);
     background-color:#000000;
 }
-.myButton2:active {
+.shopping:active {
     position:relative;
     top:1px;
 }
@@ -113,20 +119,20 @@
     height: 20px;
     width: 20px;
     padding-top: 5px;
+    background-color: white;
+    color: white;
 }
 
 
 
-/*SEARCH-BAR*/
+            /*SEARCH-BAR*/
 
 .container {
     width: 90px;
     height: 15px;
     padding-left: 40px;
-    padding-top: 140px;
-    padding-right: 0px;
-
-
+    padding-top: 120px;
+    padding-right: 40px;
 }
 .form {
     display: flex;
@@ -137,7 +143,7 @@
     padding: 10px 35px 10px 15px;
     border: none;
     border-radius: 60px;
-    margin-top: 90px;
+    margin-top: 0px;
     outline: none;
 }
 .search-button {
@@ -146,7 +152,6 @@
     outline: none;
     margin-left: -33px;
 }
-
 .search-button img {
     width: 20px;
     height: 20px;
@@ -154,7 +159,7 @@
 }
 
 
-/*FOOTER2*/
+            /*FOOTER*/
 
 .footer {
     border-top: darkgrey 2px solid;
@@ -168,35 +173,31 @@
 .inner_footer{
     display: block;
     margin: 0 auto;
-    width: 100%;
+    width: 100vw;
     height: 100%;
-
 }
 .inner_footer .footer-image{
-    padding: 40px;
     float: left;
     height: 100%;
     display: block;
+    margin-right: 30px;
 }
-
 .inner_footer .footer_third{
     width:calc(21.6666667% - 20px);
     float: left;
     height: 100%;
+    margin-right: 10px;
 }
-
 .inner_footer .footer_third:last-child{
     margin-right: 0;
-    padding-right: 0;
 }
 .inner_footer .footer_third h1{
     font-family:"Arial Black";
     font-size: 22px;
-    position: center;
-    color: #750707;
+    color: white;
     display: block;
     width: 100%;
-
+    margin-bottom: 20px;
 }
 .inner_footer .footer_third a{
     font-family: Calibri;
@@ -204,43 +205,35 @@
     color: white;
     display: block;
     width: 100%;
-
-
 }
 .inner_footer .footer_third li{
     padding: 0 5px;
     font-size: 20px;
+    display: block;
 }
 
-/*RESPONSIVE*/
 
-@media (max-width: 450px) {
+            /*RESPONSIVE*/
 
-    .header .inner_header{
-        width: 100%;
-        margin-top: 30px;
-    }
-    .header .inner_header{
-        width: 90%;
-    }
-    .inner_header .logoimage,
-    .inner_header .header_third{
-        width: 100%;
-
-    }
+@media screen and (max-width: 768px) {
     .bloodimage{
         display: none;
     }
-
-    .footer .inner_footer{
-        width: 90%;
-    }
-    .inner_footer .footer-image,
-    .inner_footer .footer_third{
-        width: 100%;
-        margin-bottom: 30px;
-
-    }
-
+.header .inner_header{
+    width: 100%;
+    margin-top: 30px;
+}
+.inner_header .logoimage,
+.inner_header .header_third{
+    width: 100%;
+}
+.footer .inner_footer{
+    width: 90%;
+}
+.inner_footer .footer-image,
+.inner_footer .footer_third{
+    width: 100%;
+    margin-bottom: 30px;
+}
 
 }

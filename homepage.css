@@ -23,8 +23,6 @@ main{
     margin: 50px;
     align-content: center;
 
-
-
  }
 section h1{
     text-align: center;
@@ -45,37 +43,36 @@ section{
     position: fixed;
     top:50%;
 }
+
 .video1{
     float:top;
     width: 1200px;
     height:400px;
-    margin-left: 250px;
-    -webkit-animation-play-state: running;
+    margin-left: 50px;
 }
 
 
 /*RESPONSIVE*/
 
-@media  (max-width: 450px) {
+@media screen and (max-width: 768px) {
     main{
-        margin:  0;
+        margin: 0 20px;
         padding: 20px;
         width: 100%;
-
     }
     body{
         position: relative;
         height: auto;
-        width: 100%;
-
+        width: auto;
     }
     .video1{
         display: none;
     }
     .popup{
-        width: 5px;
-        float: top;
-        top:50px;
+        width: 2px;
+        position: fixed;
+        top: 50%;
+        left: 0;
 
     }
 
