@@ -71,7 +71,7 @@
 }
 
 
-            /*LOGIN-BUTTON*/
+/*LOGIN-BUTTON*/
 
 .login {
     box-shadow:inset 0px 1px 3px 0px #91b8b3;
@@ -104,7 +104,7 @@
 }
 
 
-            /*Shopping Cart2*/
+/*Shopping Cart2*/
 
 .shopping {
     box-shadow:inset 0px 1px 3px 0px #91b8b3;
@@ -145,7 +145,7 @@
 
 
 
-            /*SEARCH-BAR*/
+/*SEARCH-BAR*/
 
 .container {
     width: 250px;
@@ -181,7 +181,7 @@
 }
 
 
-            /*FOOTER*/
+/*FOOTER*/
 
 .footer {
     border-top: darkgrey 2px solid;
@@ -235,7 +235,7 @@
 }
 
 
-            /*RESPONSIVE*/
+/*RESPONSIVE*/
 
 @media screen and (max-width: 768px) {
     .bloodimage{
@@ -247,68 +247,68 @@
         padding: 0;
         display: block;
     }
-.header .inner_header{
-    width: 100%;
-    margin:0;
-    padding: 0;
-    display: block;
-}
-.inner_header .logoimage{
-    position: static;
-    margin-top:20px;
-}
-.navigation{
-    margin:0;
-    padding: 0;
-}
-.navigation a{
-    margin:0;
-    padding-top: 60px;
-    padding-left: 10px;
-    font-size: medium;
-}
-.navigation a:first-child{
-    padding-left: 15px;
-}
-.buttons{
-    right: 0;
+    .header .inner_header{
+        width: 100%;
+        margin:0;
+        padding: 0;
+        display: block;
+    }
+    .inner_header .logoimage{
+        position: static;
+        margin-top:20px;
+    }
+    .navigation{
+        margin:0;
+        padding: 0;
+    }
+    .navigation a{
+        margin:0;
+        padding-top: 60px;
+        padding-left: 10px;
+        font-size: medium;
+    }
+    .navigation a:first-child{
+        padding-left: 15px;
+    }
+    .buttons{
+        right: 0;
 
-}
-.login{
+    }
+    .login{
 
-    width: 60px;
-    padding: 5px 5px;
-    margin: 5px;
-    margin-left: 80px;
+        width: 60px;
+        padding: 5px 5px;
+        margin: 5px;
+        margin-left: 80px;
 
-}
-.shopping{
-    float: top;
-    width: 140px;
-    padding: 5px 5px;
-    margin: 5px 5px;
-}
-.shopping .cartimage{
-    display: none;
-}
-.container{
-    width: 150px;
-    float: right;
-    margin-top: 20px;
+    }
+    .shopping{
+        float: top;
+        width: 140px;
+        padding: 5px 5px;
+        margin: 5px 5px;
+    }
+    .shopping .cartimage{
+        display: none;
+    }
+    .container{
+        width: 150px;
+        float: right;
+        margin-top: 20px;
 
-}
+    }
 
 
-.footer .inner_footer{
-    width: 90%;
-}
-.inner_footer .footer-image{
-    display: none;
-}
-.inner_footer .footer_third{
-    width: 100%;
-    margin-bottom: 30px;
-}
+    .footer .inner_footer{
+        width: 90%;
+    }
+    .inner_footer .footer-image{
+        display: none;
+    }
+    .inner_footer .footer_third{
+        width: 100%;
+        margin-bottom: 30px;
+    }
     .inner_footer .footer_third h1{
         font-size: 15px;
         color: #750707;

@@ -8,37 +8,46 @@
 </head>
 
 <header>
-  <div class="container">
-    <form action="/" method="GET" class="form">
-      <input type="search" placeholder="Search" class="search-field"/>
-      <button type="submit" class="search-button">
-        <img src="resources/search.png">
-      </button>
-    </form>
+  <div class="header">
+    <div class="inner_header">
+      <div>
+        <img src="resources/logo.png" class="logoimage" srcset="resources/logo.png 256w, resources/logo.png 512w,
+            resources/logo.png 1024w, resources/logo.png 2048w" alt="Logo">
+      </div>
+
+      <div class="navigation">
+        <ul style="list-style-type:none">
+          <a href="homepage.html"><li >Homepage</li></a>
+          <a href="reallife.html"><li>Real-Life</li></a>
+          <a href="online.html"><li>Online/VR</li></a>
+          <a class="bloodimage" href="merchandise.html"><li>Merchandise</li></a>
+        </ul>
+      </div>
+
+      <div class="header_third container" >
+        <form action="/" method="GET" class="form">
+          <input type="search" placeholder="Search" class="search-field"/>
+          <button type="submit" class="search-button">
+            <img src="resources/search.png" class="searchimage" srcset="resources/search.png
+        resources/search.png 1024w, resources/search.png 2048w" alt="Search Field">
+          </button>
+        </form>
+      </div>
+
+      <div class="buttons">
+        <div class="login"><a href="logincart.html"><li>Login</li></a></div>
+        <div class="shopping"><a href="logincart.html"></a><li>Shopping Cart</li><li><img src="resources/cart.png" class="cartimage" srcset="resources/cart.png
+        resources/cart.png 1024w, resources/cart.png 2048w" alt="Shopping Cart"></li></div>
+      </div>
+
+    </div>
   </div>
 </header>
 
+
+
+
 <body>
-
-<nav>
-  <img src="resources/logo.png" class="logoimage" srcset="resources/logo.png 256w, resources/logo.png 512w,
-        resources/logo.png 1024w, resources/logo.png 2048w" alt="Logo">
-
-  <ul class="navigation" style="list-style-type:none">
-    <li class="navlist"><a href="homepage.html">Homepage</a></li>
-    <li class="navlist"><a href="reallife.html">Real-Life</a></li>
-    <li class="navlist"><a href="online.html">Online/VR</a></li>
-    <li class="navlist bloodimage"><a href="merchandise.html">Merchandise</a></li>
-    <li class="navlist myButton"><a href="logincart.html">Login</a></li>
-    <li class="navlist shoppingcart">
-      <a href="logincart.html">
-        <img src="resources/shoppingcart.JPG" class="shoppingimage" srcset="resources/shoppingcart.JPG 256w, resources/shoppingcart.JPG 512w,
-        resources/shoppingcart.JPG 1024w, resources/shoppingcart.JPG 2048w" alt="Shopping Cart">
-      </a>
-    </li>
-  </ul>
-</nav>
-
 <main>
 
   <section>
@@ -75,7 +84,7 @@
       </label>
     </article>
     <article>
-    <h4 id="HarryPotter">Harry Potter Stuff:</h4>
+      <h4 id="HarryPotter">Harry Potter Stuff:</h4>
       <img class="imageSize" src="resources/HogwartsCup.jpg" alt="HogwartsCup">
       <p class="forPhotos">
         Some description here....
@@ -111,61 +120,57 @@
   </section>
 </main>
 
-<div class="popup" onclick="myFunction()"><img src="resources/newsletter.png" alt="newsletterbutton" width="70px" height="70px"></div>
-
 <footer>
-  <table class="footertable">
-    <tr class="footerheader">
-      <th class="footerheader"></th>
-      <th class="footerheader">Kontakt</th>
-      <th class="footerheader">Links</th>
-      <th class="footerheader">Soziale Medien</th>
-      <th class="footerheader">Zahlungsmethoden</th>
-    </tr>
-    <tr>
-      <td>  <img class="footer-image" src="resources/logo.png" width="250px" height="100px"></td>
-      <td>
-        <address id="footer">
-          <p>
-            Escape-Room Straße 13/6
-            1060 Wien<br>
+  <div class="footer">
+    <div class="inner_footer">
+      <div>
+        <a href="homepage.html">
+          <img class="footer-image" src="resources/logo.png"  width="200px"  height="80px" alt="Logo Footer"></a>
+      </div>
 
-            example.com<br>
+      <div class="footer_third">
+        <h1>Need Help?</h1>
+        <a href="homepage.html">Homepage</a>
+        <a href="reallife.html">Real-Life</a>
+        <a href="online.html">Online/VR</a>
+        <a href="merchandise.html">Merchandise</a>
+        <a href="logincart.html">Login</a>
+        <a href="logincart.html">Shopping Cart</a>
+      </div>
 
-            Öffnungszeiten:<br>
-            Mo-Fr 15:00 - 23:00<br>
-            Sa, So & Feiertage 10:00 - 01:00<br>
-          </p>
-        </address>
-      </td>
+      <div class="footer_third">
+        <h1>Contact Us</h1>
+        <span>
+                Escape-Room Straße 13/6<br>
+                1060 Vienna<br>
+                Austria<br>
 
-      <td>
-        <ul style="list-style-type:none;">
-          <li class="footerlink"><a href="homepage.html">Homepage</a></li>
-          <li class="footerlink"><a href="reallife.html">Real-Life</a></li>
-          <li class="footerlink"><a href="online.html">Online/VR</a></li>
-          <li class="footerlink"><a href="merchandise.html" >Merchandise</a></li>
-        </ul>
-      </td>
-      <td>
-        <ul style="list-style-type:none;">
-          <li class="footerlink"><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-          <li class="footerlink"><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-          <li class="footerlink"><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-          <li class="footerlink"><a href="https://www.tiktok.com/" target="_blank">Tiktok</a></li>
-        </ul>
+                01/136 631 13<br>
 
-      </td>
-      <td>
-        <ul style="list-style-type:none;">
-          <li class="footerlink"><a href="https://app.klarna.com/login" target="_blank">Klarna</a></li>
-          <li class="footerlink"><a href="https://www.paypal.com/at/signin" target="_blank">Paypal</a></li>
-          <li class="footerlink"><a href="https://ebanking.bawagpsk.com/" target="_blank">Maestro</a></li>
-          <li class="footerlink"><a href="https://www.visaeurope.at/" target="_blank">Visa</a></li>
-        </ul>
-      </td>
-    </tr>
-  </table>
+                escaperoom@gmail.com
+            </span>
+
+      </div>
+
+      <div class="footer_third">
+        <h1>Paying Methods</h1>
+        <a href="https://app.klarna.com/login" target="_blank">Klarna</a>
+        <a href="https://www.paypal.com/at/signin" target="_blank">Paypal</a>
+        <a href="https://ebanking.bawagpsk.com/" target="_blank">Maestro</a>
+        <a href="https://www.visaeurope.at/" target="_blank">Visa</a>
+      </div>
+
+      <div class="footer_third">
+        <h1>Follow Us</h1>
+        <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i>Facebook</a></li>
+        <li><a href="https://www.facebook.com"><i class="fa fa-twitter"></i>Twitter</a></li>
+        <li><a href="https://www.facebook.com"><i class="fa fa-instagram"></i>Instagram</a></li>
+        <li><a href="https://www.facebook.com"><i class="fa fa-tiktok"></i>Tiktok</a></li>
+
+      </div>
+    </div>
+  </div>
 </footer>
+
 </body>
 </html>
