@@ -123,6 +123,7 @@
     text-shadow:0px -1px 0px #2b665e;
     margin-top: 130px;
     margin-left: 10px;
+    position: fixed;
 }
 .shopping li{
     color: white;
