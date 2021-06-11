@@ -14,7 +14,6 @@
 
 
 
-
 body{
     width: 100%;
     top:250px;
@@ -63,9 +62,7 @@ footer{
     padding: 14px;
     font-family: "Impact";
     color: white;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+   margin: 0px;
     text-decoration: none;
 
 }
@@ -77,6 +74,9 @@ footer{
     float: left;
     margin-left: 150px;
     margin-right: 50px;
+    width:220px;
+    height:220px;
+    border:0;
 }
 
 
@@ -96,10 +96,14 @@ footer{
 .table-cases{
     margin-top: 150px;
     margin-left: 150px;
+
+
 }
 
 .case-image{
-    margin-right: 50px;
+    margin-right: 0px;
+    width:300px;
+    height:240px;
 }
 
 h4{
@@ -112,5 +116,19 @@ h4{
     margin-right: 0px;
     margin-left: 0px;
     padding: 0px;
+
 }
+.stars{
+    width:100px;
+    height:50px;
+}
+.footer-image{
+    width:200px;
+    height:80px;
+}
+
+td{
+    border: #750707 3px solid;
+}
+
 
