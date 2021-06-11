@@ -19,6 +19,8 @@
     background-color: black;
     top:0;
     position: fixed;
+    z-index: 999;
+
 }
 .inner_header{
     width: 100%;
