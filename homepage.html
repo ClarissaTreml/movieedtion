@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="headerfooter.css">
     <link rel="stylesheet" href="homepage.css">
     <title>Hompepage</title>
+
 </head>
+<body>
 <header>
+
     <div class="header">
         <div class="inner_header">
             <div>
                 <img src="resources/logo.png" class="logoimage" srcset="resources/logo.png 256w, resources/logo.png 512w,
-            resources/logo.png 1024w, resources/logo.png 2048w" alt="Logo">
+            resources/logo.png 1024w, resources/logo.png 2048w" sizes="(max-width: 300px) 1800px, 1800px" alt="Logo">
             </div>
 
             <div class="navigation">
                 <ul style="list-style-type:none">
-                    <a class="bloodimage" href="homepage.html"><li >Homepage</li></a>
-                    <a href="reallife.html"><li>Real-Life</li></a>
-                    <a href="online.html"><li>Online/VR</li></a>
-                    <a href="merchandise.html"><li>Merchandise</li></a>
+                    <li ><a class="bloodimage" href="homepage.html">Homepage</a></li>
+                    <li><a href="reallife.html">Real-Life</a></li>
+                    <li><a href="online.html">Online/VR</a></li>
+                    <li><a href="merchandise.html">Merchandise</a></li>
                 </ul>
             </div>
 
@@ -28,29 +35,36 @@
                 <form action="/" method="GET" class="form">
                     <input type="search" placeholder="Search" class="search-field"/>
                     <button type="submit" class="search-button">
-                        <img src="resources/search.png" class="searchimage" srcset="resources/search.png
-        resources/search.png 1024w, resources/search.png 2048w" alt="Search Field">
+                        <img src="resources/search.png" class="searchimage" srcset="resources/search.png 256w,
+        resources/search.png 1024w, resources/search.png 2048w" sizes="(max-width: 300px) 500px, 500px" alt="Search Field">
                     </button>
                 </form>
             </div>
 
             <div class="buttons">
-                <div class="login"><a href="logincart.html"><li>Login</li></a></div>
-                <div class="shopping"><a href="logincart.html"></a><li>Shopping Cart</li><li><img src="resources/cart.png" class="cartimage" srcset="resources/cart.png
-        resources/cart.png 1024w, resources/cart.png 2048w" alt="Shopping Cart"></li></div>
+                <div class="login"><a href="logincart.html">Login</a></div>
+                <div class="shopping"><a href="logincart.html">Shopping Cart</a>
+                    <img src="resources/cart.png" class="cartimage" srcset="resources/cart.png 256w,
+                resources/cart.png 1024w, resources/cart.png 2048w" sizes="(max-width: 300px) 500px, 500px" alt="Shopping Cart"></div>
             </div>
 
         </div>
     </div>
+
 </header>
 
-<body>
 <main>
-    <div class="popup" onclick="myFunction()"><img src="resources/newsletter.png" alt="newsletterbutton" width="70px" height="70px"></div>
-
-    <section></section>
     <section>
+        <h2>BIST DU BEREIT FÜR EIN UNGLAUBLICHES ABENTEUER?</h2>
+    </section>
+    <div  onclick="myFunction()"><img class="popup" src="resources/newsletter.png" alt="newsletterbutton"></div>
+
+
+
+    <section>
+        <h2>.</h2>
         <article>
+            <h2>.</h2>
             <video class="video1" controls autoplay>
                 <source src="resources/escaperoom.mp4" type="video/mp4">
             </video>
@@ -58,38 +72,39 @@
     </section>
 
     <section>
-        <h1>Information</h1>
+        <h2>Information</h2>
         <p>Whether you’re new to escape rooms, or have done many before there is something in all
             of our themes for everyone!</p><br>
 
     </section>
 
     <section>
-        <h1>News</h1>
+        <h2>News</h2>
 
     </section>
 
     <section>
-        <h1>About Us</h1>
+        <h2>About Us</h2>
 
     </section>
 
     <section>
         <div class="qanda">
-            <h1>Q&A</h1>
-            <br><h2> 1. ARE WE REALLY LOCKED IN THE ROOM?</h2><br>
+
+            <h2>Q&A</h2>
+            <br><h3> 1. ARE WE REALLY LOCKED IN THE ROOM?</h3><br>
             No! All our escape rooms are equipped with emergency exit buttons.
             If you need to excuse yourself to the bathroom or need to leave the room,
             you should radio the Game Master to let them know your intentions, so they can respond accordingly.<br>
 
 
-            <br><h2>2. ARE YOUR ESCAPE ROOMS SCARY?</h2><br>
+            <br><h3>2. ARE YOUR ESCAPE ROOMS SCARY?</h3><br>
             Our escape rooms are intended to be spooky.
             Our rooms are designed to be immersive,
             suspenseful and challenging, but our intention is never to purposely scare you.
             Don’t worry you won’t spend an hour bumping around in pitch darkness!<br>
 
-            <br><h2>3. ARE THE ESCAPE ROOMS CLAUSTROPHOBIC?</h2><br>
+            <br><h3>3. ARE THE ESCAPE ROOMS CLAUSTROPHOBIC?</h3><br>
             Spoiler alert! Our escape rooms are not really locked nor are the rooms very small.
             In case of an emergency, there is a button you can press to exit the game. We have
             designed our escape rooms to be a place for players to have fun with friends, family,
@@ -97,32 +112,32 @@
             determined player maximums for each game to make sure that everyone will have plenty
             of room at each point during the experience.<br>
 
-            <br><h2>4. DO WE HAVE TO PLAY WITH STRANGERS?</h2><br>
+            <br><h3>4. DO WE HAVE TO PLAY WITH STRANGERS?</h3><br>
             All our escape games are private experiences. You will not be paired up with strangers.
             Once you book an escape room it is reserved exclusively for you and your teammates—unless,
             of course, you’d like to invite some new friends!<br>
 
-            <br><h2>5. IS THERE A DRESS CODE?</h2><br>
+            <br><h3>5. IS THERE A DRESS CODE?</h3><br>
             There is no strict dress code to play our escape rooms, but you should dress for comfort
             and for movement.<br>
 
-            <br><h2>6. HOW MANY ROOMS ARE THERE IN EACH GAME?</h2><br>
+            <br><h3>6. HOW MANY ROOMS ARE THERE IN EACH GAME?</h3><br>
             Part of the adventure is to discover this with your team mates—so, sorry, you’ll have
             to play each of the themes to find out.<br>
 
-            <br><h2>7. WHAT CAN I BRING INTO THE ESCAPE ROOM?</h2><br>
+            <br><h3>7. WHAT CAN I BRING INTO THE ESCAPE ROOM?</h3><br>
             All you need is your favourite teammates, your inner detective and puzzle solving skills!
             If you wear reading glasses be sure to bring them as well!
             We provide lockers free of charge for storing phones, cameras, purses, etc.
             (Sorry, no recording devices are allowed in our theme rooms.)<br>
 
-            <br><h2>8. ARE YOUR ESCAPE ROOMS PHYSICALLY DEMANDING?</h2><br>
+            <br><h3>8. ARE YOUR ESCAPE ROOMS PHYSICALLY DEMANDING?</h3><br>
             Our escape games are designed for you to use your wits, and not meant to be physically demanding!
             Although you should dress for movement, our indoor escape games do not require running,
             jumping, or any physical strength. However, you may need to bend over or lift small things
             in order to escape. No force is required for any of our puzzles, just mental strength!<br>
 
-            <br><h2>9. WHAT ARE THE DIFFICULTLY LEVELS OF YOUR ROOMS?</h2><br>
+            <br><h3>9. WHAT ARE THE DIFFICULTLY LEVELS OF YOUR ROOMS?</h3><br>
             All of our themes are designed to have the same level of difficulty, and are meant to be
             extremely challenging. Each theme consists of different styles of puzzles, in order to challenge
             all of your mental faculties.  Of course, the puzzles among our various themes are all different,
@@ -131,15 +146,15 @@
         </div>
     </section>
 
-
 </main>
-</body>
+
 <footer>
+
     <div class="footer">
         <div class="inner_footer">
             <div>
                 <a href="homepage.html">
-                    <img class="footer-image" src="resources/logo.png"  width="200px"  height="80px" alt="Logo Footer"></a>
+                    <img class="footer-image" src="resources/logo.png" alt="Logo Footer"></a>
             </div>
 
             <div class="footer_third">
@@ -176,14 +191,15 @@
 
             <div class="footer_third">
                 <h1>Follow Us</h1>
-                <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i>Facebook</a></li>
-                <li><a href="https://www.facebook.com"><i class="fa fa-twitter"></i>Twitter</a></li>
-                <li><a href="https://www.facebook.com"><i class="fa fa-instagram"></i>Instagram</a></li>
-                <li><a href="https://www.facebook.com"><i class="fa fa-tiktok"></i>Tiktok</a></li>
-
+                <a href="https://www.facebook.com">Facebook</a>
+                <a href="https://www.twitter.com">Twitter</a>
+                <a href="https://www.instagram.com">Instagram</a>
+                <a href="https://www.tiktok.com">Tiktok</a>
             </div>
+
         </div>
     </div>
-</footer>
 
+</footer>
+</body>
 </html>
