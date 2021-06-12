@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-.navigation a:first-child{
-    padding-top: 110px;
-}
-
 body{
     width: 100%;
     top:250px;
@@ -17,27 +13,26 @@ body{
     background-color: black;
     color: whitesmoke;
     position: absolute;
-
 }
 main{
     padding: 0 70px;
     color: white;
-
     display: block;
     margin: 50px;
     align-content: center;
-
 }
 section h1{
     text-align: center;
     color: #750707;
 }
-section h2{
+section h3{
     font-size: 20px;
     color: #750707;
 }
-section{
-
+section h2{
+    text-align: center;
+    font-size: 27px;
+    color: #750707;
 }
 .qanda{
     text-align: justify-all;
@@ -47,8 +42,9 @@ section{
     position: fixed;
     top:50%;
     left: 10px;
+    width: 70px;
+    height: 70px;
 }
-
 .video1{
     float:top;
     width: 1200px;
