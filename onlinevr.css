@@ -7,13 +7,6 @@
     box-sizing: border-box;
 }
 
-.navigation a:nth-child(3) {
-    padding-top: 110px;
-
-}
-
-
-
 body{
     width: 100%;
     top:250px;
@@ -47,15 +40,7 @@ article{
     margin-top: 20px;
 
 }
-footer{
-    float: bottom;
-    position: relative;
 
-}
-
-.footer_third{
-    color:white;
-}
 
 .button{
     background-color:red;
@@ -64,12 +49,7 @@ footer{
     color: white;
    margin: 0px;
     text-decoration: none;
-
 }
-
-
-
-
 .links {
     float: left;
     margin-left: 150px;
@@ -78,53 +58,37 @@ footer{
     height:220px;
     border:0;
 }
-
-
 .popup{
     position: fixed;
     top:50%;
     margin: 0;
     padding:0;
 }
-
-
-
 .text {
     text-align: left;
 }
-
 .table-cases{
     margin-top: 150px;
     margin-left: 150px;
-
-
 }
-
 .case-image{
     margin-right: 0px;
     width:300px;
     height:240px;
 }
-
 h4{
     font-size: 12px;
 }
-
 .table-rating{
     border: #750707 3px solid;
     margin-top: 100px;
     margin-right: 0px;
     margin-left: 0px;
     padding: 0px;
-
 }
 .stars{
     width:100px;
     height:50px;
-}
-.footer-image{
-    width:200px;
-    height:80px;
 }
 
 td{
