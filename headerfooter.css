@@ -4,14 +4,11 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-
 }
 .navigation .bloodimage{
     background: url("resources/cube.png") top right no-repeat;
     background-size: 111px;
-    margin-top: 40px;
 }
-
 .header{
     width: 100%;
     height: 210px;
@@ -20,7 +17,6 @@
     top:0;
     position: fixed;
     z-index: 999;
-
 }
 .inner_header{
     width: 100%;
@@ -45,33 +41,36 @@
     margin-right: 0;
     padding-right: 0;
 }
-.navigation a{
+.navigation li{
     height: 100%;
     display: inline-flex;
     float: left;
     padding-left: 30px;
     font-family: "Impact", fantasy;
-    color: #750707;
     font-size: 35px;
-    padding-top: 150px;
+    padding-top: 40px;
 }
-.navigation a:first-child{
+.navigation li:first-child{
     padding-left: 100px;
 }
-
-.navigation a li{
+.navigation li a{
     height: 100%;
+    color: #750707;
 }
-
+.navigation a:first-child{
+    padding-top: 110px;
+}
 .buttons{
     padding-top: 10px;
     color: white;
 }
-
 .shopping{
     color: white;
 }
-
+.footer-image{
+    width: 200px;
+    height: 80px;
+}
 
 /*LOGIN-BUTTON*/
 
@@ -90,10 +89,10 @@
     padding:11px 23px;
     text-decoration:none;
     text-shadow:0px -1px 0px #2b665e;
-    margin-top: 130px;
+    margin-top: 134px;
     margin-left: 150px;
 }
-.login li{
+.login a{
     color: white;
 }
 .login:hover {
@@ -120,14 +119,14 @@
     font-family:Calibri;
     font-size:15px;
     font-weight:bold;
-    padding:10px 23px;
+    padding:9px 23px;
     text-decoration:none;
     text-shadow:0px -1px 0px #2b665e;
-    margin-top: 130px;
+    margin-top: 133px;
     margin-left: 10px;
     position: fixed;
 }
-.shopping li{
+.shopping a{
     color: white;
     display: inline-flex;
 }
