@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-.navigation a:first-child{
-    padding-top: 110px;
-}
-
 body{
     width: 100%;
     top:250px;
