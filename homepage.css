@@ -22,7 +22,7 @@ main{
 }
 
 div h2{
-    font-family: "Guttenberg MF", fantasy;
+    font-family: "Impact", fantasy;
     font-weight: bolder;
     text-align: center;
     font-size: 38px;
@@ -30,7 +30,7 @@ div h2{
     padding-bottom: 20px;
 }
 .qanda h3{
-    font-family: "Guttenberg MF", fantasy;
+    font-family: "Impact", fantasy;
     font-size: 26px;
     color: #750707;
     padding-left: 140px;
