@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="google-signin-client_id" content="636772162388-in3to46lsg1nfojuvd4ianjjf6o9tqbh.apps.googleusercontent.com">
   <link rel="stylesheet" href="headerfooter.css">
   <link rel="stylesheet" href="merchandise.css">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
   <title>Merchandise</title>
 </head>
 <body>
@@ -41,6 +43,8 @@
           <img src="resources/cart.png" class="cartimage" srcset="resources/cart.png 256w,
                 resources/cart.png 1024w, resources/cart.png 2048w" sizes="(max-width: 300px) 500px, 500px" alt="Shopping Cart"></div>
       </div>
+
+      <div class="g-signin2"  data-onsuccess="onSignIn"></div>
 
     </div>
   </div>
