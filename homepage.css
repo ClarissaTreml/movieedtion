@@ -5,7 +5,6 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-
 body{
     width: 100%;
     top:250px;
@@ -16,28 +15,39 @@ body{
 }
 main{
     padding: 0 70px;
-    color: white;
+    color: whitesmoke;
     display: block;
     margin: 50px;
     align-content: center;
 }
-section h1{
+
+div h2{
+    font-family: "Guttenberg MF", fantasy;
+    font-weight: bolder;
     text-align: center;
+    font-size: 38px;
     color: #750707;
+    padding-bottom: 20px;
 }
-section h3{
-    font-size: 20px;
+.qanda h3{
+    font-family: "Guttenberg MF", fantasy;
+    font-size: 26px;
     color: #750707;
+    padding-left: 140px;
+    letter-spacing: 2px;
 }
-section h2{
-    text-align: center;
-    font-size: 27px;
-    color: #750707;
-}
-.qanda{
+.paragraphs{
+    font-size: 25px;
+    padding: 0px 140px;
     text-align: justify-all;
-    font-size: 16px;
+    letter-spacing: 1.6px;
+    line-height: 1.3;
+    color: whitesmoke;
 }
+.qanda .paragraphs{
+    padding: 0px 160px;
+}
+
 .popup{
     position: fixed;
     top:50%;
@@ -45,13 +55,64 @@ section h2{
     width: 70px;
     height: 70px;
 }
+.intro{
+    width: 100%;
+    text-align: center;
+}
 .video1{
     float:top;
     width: 1200px;
     height:400px;
-    margin-left: 50px;
+    display: inline-flex;
 }
+.principle{
+    color: #750707;
+    text-align: center;
+    width: 100%;
+}
+.procedure{
+    display: inline-block;
+}
+.procedure .teamworkimage{
+    margin-left: 110px;
+}
+.aboutus .paragraphs{
+    text-align: center;
+    margin: 0px 90px;
+}
+.statistics-container{
+    text-align: center;
+}
+.statistics-container .statistics-box{
+    text-align: center;
+    display: inline-block;
+    padding: 20px 40px;
+    color: whitesmoke;
+}
+.newsblock{
+    background-color: #750707;
+    color: whitesmoke;
+    font-size: 25px;
+    padding: 0px 140px;
+    text-align: justify-all;
+    letter-spacing: 1.6px;
+    line-height: 1.3;
 
+}
+.corona-container{
+    text-align: center;
+    display: inline-block;
+    padding: 20px 40px;
+    color: whitesmoke;
+}
+.corona{
+    color: whitesmoke;
+    font-size: 25px;
+    padding: 0px 140px;
+    text-align: justify-all;
+    letter-spacing: 1.6px;
+    line-height: 1.3;
+}
 
 /*RESPONSIVE*/
 

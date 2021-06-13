@@ -46,9 +46,10 @@
     display: inline-flex;
     float: left;
     padding-left: 30px;
-    font-family: "Impact", fantasy;
-    font-size: 35px;
-    padding-top: 40px;
+    font-family: "Guttenberg MF", fantasy;
+    font-weight: bolder;
+    font-size: 50px;
+    padding-top: 27px;
 }
 .navigation li:first-child{
     padding-left: 100px;
@@ -90,7 +91,7 @@
     text-decoration:none;
     text-shadow:0px -1px 0px #2b665e;
     margin-top: 134px;
-    margin-left: 150px;
+    margin-left: 70px;
 }
 .login a{
     color: white;
@@ -204,7 +205,7 @@
     float: left;
     height: 100%;
     display: block;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 .inner_footer .footer_third{
     width:calc(21.6666667% - 20px);
@@ -216,25 +217,25 @@
     margin-right: 0;
 }
 .inner_footer .footer_third h1{
-    font-family:"Arial Black";
-    font-size: 22px;
+    font-family: "";
+    font-size: 20px;
     color: white;
     display: block;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 .inner_footer .footer_third a{
-    font-family: Calibri;
-    font-size: 18px;
+    font-family: "Calibri Light";
+    font-size: 16px;
     color: white;
     display: block;
     width: 100%;
-}
-.inner_footer .footer_third li{
     padding: 0 5px;
-    font-size: 20px;
-    display: block;
+
 }
+/*.inner_footer .footer_third li{
+
+}*/
 
 
 /*RESPONSIVE*/
