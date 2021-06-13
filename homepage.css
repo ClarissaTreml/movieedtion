@@ -97,21 +97,14 @@ div h2{
     text-align: justify-all;
     letter-spacing: 1.6px;
     line-height: 1.3;
-
 }
-.corona-container{
+.coronacontainer{
     text-align: center;
-    display: inline-block;
-    padding: 20px 40px;
-    color: whitesmoke;
+    width: 100%;
 }
 .corona{
-    color: whitesmoke;
-    font-size: 25px;
-    padding: 0px 140px;
-    text-align: justify-all;
-    letter-spacing: 1.6px;
-    line-height: 1.3;
+    display: inline-block;
+    padding: 0px 20px;
 }
 
 /*RESPONSIVE*/
