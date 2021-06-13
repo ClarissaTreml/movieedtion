@@ -24,3 +24,24 @@ main{
     align-content: center;
 
 }
+.button_login{
+    background-color: #ea4335;
+    color: white;
+    height: 54px;
+    width:453px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    text-indent: 180px;
+    margin-bottom: 10px;
+    display: flex !important;
+    -webkit-box-align: center !important;
+    align-items: center !important;
+    font-weight: 400;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
