@@ -11,6 +11,7 @@
     <script src="reallife.js"></script>
     <title>Real Life</title>
 
+
 </head>
 <body>
 <header>
@@ -113,26 +114,53 @@
             <br>
         </p>
 
-        <form action="shoppingCart.html">
-            <input type="datetime-local" id="booking" name="booking">
-            <select class="articleShoppingCartQuantity" id="articleShoppingCartQuantity_978-1449363352">
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-            </select>
+        <form action="BookingCalendar/Formular.html">
+            <label for="booking"></label><input type="datetime-local" id="booking" name="booking" min="09:00"
+                                                max="23:00">
+            <label for="articleShoppingCartQuantity_978-1449363352"></label><select class="articleShoppingCartQuantity"
+                                                                                    id="articleShoppingCartQuantity_978-1449363352">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+
+            <div class="book">
+                <form class="book-form">
+                    <div class="form-item">
+                        <label for="chekin-date">Check in Date:</label><input type="date" id="chekin-date">
+                    </div>
+                    <div class="form-item">
+                        <label for="chekout-date">Check Out Date: </label><input type="date" id="chekout-date">
+                    </div>
+                    <div class="form-item">
+                        <label for="adult">Adults: </label>
+                        <input type="number" min="1" value="1" id="adult">
+                    </div>
+                    <div class="form-item">
+                        <label for="children">Children: </label>
+                        <input type="number" min="1" value="1" id="children">
+                    </div>
+                    <div class="form-item">
+                        <label for="room">Rooms: </label>
+                        <input type="number" min="1" value="1" id="room">
+                    </div>
+                    <div class="form-item">
+                        <input type="submit" class="btn" value="Book Now">
+                    </div>
+                </form>
+            </div>
+
             <button type="submit" class="button">Purchase</button>
         </form>
         <br>
         <br>
-
     </div>
 
 
     <div class="containerP">
         <div class="Paranormal">
-
         </div>
         <p><br>
             <br>
