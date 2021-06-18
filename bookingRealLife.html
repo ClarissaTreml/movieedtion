@@ -17,8 +17,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="bookingRealLife.css">
     <script src="bookingRealLife.js"></script>
-
-
     <title>Booking for Real Life</title>
 
 
@@ -43,7 +41,7 @@
                 <button class="row-remove-harry" type="reset">Remove</button>
             </td>
             <td>
-                <input type="time" name="limittime" list="limittimeslist" required>
+                <input type="time" name="limittime" list="limittimeslist" >
                 <datalist id="limittimeslist">
 
                     <option value="15:00">
@@ -61,23 +59,11 @@
                 </datalist>
             </td>
             <td>Harry Potter</td>
-            <td><input type="number" name="qty" value="0" min="2" max="6" id="harry" required></td>
+            <td><input type="number" name="qty" value="0" max="6" id="harry" ></td>
             <td><input type="text" name="price" value="25"></td>
             <td><label>
                 <input type="text" name="date" class="form-control datepicker" id="date1">
             </label>
-
-                <script type="text/javascript">
-
-                    $('.datepicker').datepicker({
-                        weekStart: 1,
-                        todayHighlight: true,
-                        todayBtn: "linked",
-                        format: 'dd/mm/yyyy',
-                        startDate: new Date()
-                    });
-
-                </script>
 
             </td>
             <td><input type="text" name="item_total" value="" jAutoCalc="{qty} * {price}"></td>
@@ -87,14 +73,14 @@
                 <button class="row-remove-paranormal" type="reset">Remove</button>
             </td>
             <td>
-                <input type="time" name="limittime" list="limittimeslist" required>
+                <input type="time" name="limittime" list="limittimeslist" >
 
             </td>
             <td>Paranormal Activity</td>
-            <td><input type="number" name="qty" value="0" min="2" max="6" id="paranormal"></td>
+            <td><input type="number" name="qty" value="0" max="6" id="paranormal"></td>
             <td><input type="text" name="price" value="10"></td>
             <td><label>
-                <input type="text" name="date" class="form-control datepicker" id="datess" required>
+                <input type="text" name="date" class="form-control datepicker" >
             </label>
 
             </td>
@@ -118,7 +104,7 @@
             </td>
             <td></td>
             <td>Jigsaw</td>
-            <td><input type="number" name="qty" value="0" min="1" max="10" id="jigsaw"></td>
+            <td><input type="number" name="qty" value="0" max="10" id="jigsaw"></td>
             <td><input type="text" name="price" value="20"></td>
             <td></td>
             <td><input type="text" name="item_total" value="" jAutoCalc="{qty} * {price}"></td>
@@ -129,7 +115,7 @@
             </td>
             <td></td>
             <td>Avenger</td>
-            <td><input type="number" name="qty" value="0" min="1" max="10" id="avenger"></td>
+            <td><input type="number" name="qty" value="0"  max="10" id="avenger"></td>
             <td><input type="text" name="price" value="25"></td>
             <td></td>
             <td><input type="text" name="item_total" value="" jAutoCalc="{qty} * {price}"></td>
@@ -140,7 +126,7 @@
             </td>
             <td></td>
             <td>Inception</td>
-            <td><input type="number" name="qty" value="0" min="1" max="10" id="inception"></td>
+            <td><input type="number" name="qty" value="0" max="10" id="inception"></td>
             <td><input type="text" name="price" value="50"></td>
             <td></td>
             <td><input type="text" name="item_total" value="" jAutoCalc="{qty} * {price}"></td>
