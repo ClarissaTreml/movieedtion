@@ -2,17 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="test.css">
-    <script src="test.js"></script>
-    <title>Title</title>
+    <link rel="stylesheet" href="bookingRealLife.css">
+    <script src="bookingRealLife.js"></script>
+    <title>Booking for Real Life</title>
 </head>
+
 <body>
 
 <div class="bookingTable">
 
-    <input type="date" id="calendar" >
+    <input type="text" name="date" class="form-control datepicker" >
 
+    <script type="text/javascript">
 
+        $('.datepicker').datepicker({
+            weekStart: 1,
+            todayHighlight: true,
+            todayBtn: "linked",
+            format: 'dd/mm/yyyy',
+            startDate: new Date()
+        });
+
+    </script>
     <br>
     <br>
 
