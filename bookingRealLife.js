@@ -6,3 +6,4 @@
 
     var minDate = year + "-" + month + "-" + tdate;
     document.getElementById("calendar").setAttribute('min', minDate);
+
