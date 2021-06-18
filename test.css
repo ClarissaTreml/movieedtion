@@ -4,8 +4,20 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    /*background-color: black;*/
 
 }
+.bookingTable{
 
+    border: solid black;
+    color: #750707;
+}
+.participant{
+    color: #750707;
+
+}
+.btn{
+    color: #750707;
+}
 
 
