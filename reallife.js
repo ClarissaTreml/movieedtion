@@ -1,2 +1,9 @@
-var today = new Date().toISOString().split('T')[0];
-document.getElementsByName("somedate")[0].setAttribute('min', today);
+$(function () {
+    $('.datepicker').datepicker({
+        weekStart: 1,
+        todayHighlight: true,
+        todayBtn: "linked",
+        format: 'dd/mm/yyyy',
+        startDate: new Date()
+    });
+});

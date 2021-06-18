@@ -6,98 +6,63 @@
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jautocalc@1.3.1/dist/jautocalc.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="bookingRealLife.css">
     <script src="bookingRealLife.js"></script>
+
+
     <title>Booking for Real Life</title>
+
 
 </head>
 
 <body>
-
-<div class="bookingTable">
-
-    <table>
+<form action="shop.html" method="get" id="cart" autocomplete="off">
+    <table name="cart">
         <tr>
+            <th></th>
             <th>Time</th>
             <th>Game</th>
             <th>Participants</th>
             <th>Price/Person</th>
             <th>Date</th>
-            <th>Total</th>
-            <th></th>
-        </tr>
-        <tr>
-
-            <form action="shop.html" method="get" target="_blank">
-                <td>
-                    <input type="time" name="limittime" list="limittimeslist" required>
-                    <datalist id="limittimeslist">
-
-                        <option value="15:00">
-                        <option value="16:00">
-                        <option value="17:00">
-                        <option value="18:00">
-                        <option value="19:00">
-                        <option value="20:00">
-                        <option value="21:00">
-                        <option value="22:00">
-                        <option value="23:00">
-                        <option value="00:00">
-                        <option value="01:00">
-
-                    </datalist>
-                </td>
-                <td>Harry Potter</td>
-                <td>
-                    <div>
-                        <input class="participant" type="number" min="2" max="6" value="2" required>
-                    </div>
-                </td>
-                <td class="singlePrice">25 €</td>
-                <td><label>
-                    <input type="text" name="date" class="form-control datepicker" required>
-                </label>
-
-                    <script type="text/javascript">
-
-                        $('.datepicker').datepicker({
-                            weekStart: 1,
-                            todayHighlight: true,
-                            todayBtn: "linked",
-                            format: 'dd/mm/yyyy',
-                            startDate: new Date()
-                        });
-                    </script>
-                </td>
-                <td class="totalPrice">200 €</td>
-                <td>
-                    <div>
-                        <input type="submit" class="btn" value="Book Now">
-                    </div>
-                </td>
-            </form>
+            <th>Item Total</th>
         </tr>
 
-        <tr>
-            <form action="shop.html" method="get" target="_blank">
+
+        <tr class="line_items">
+            <td>
+                <button class="row-remove-harry" type="reset">Remove</button>
+            </td>
             <td>
                 <input type="time" name="limittime" list="limittimeslist" required>
+                <datalist id="limittimeslist">
 
+                    <option value="15:00">
+                    <option value="16:00">
+                    <option value="17:00">
+                    <option value="18:00">
+                    <option value="19:00">
+                    <option value="20:00">
+                    <option value="21:00">
+                    <option value="22:00">
+                    <option value="23:00">
+                    <option value="00:00">
+                    <option value="01:00">
+
+                </datalist>
             </td>
-            <td>Paranormal Activity</td>
-            <td>
-                <div>
-                    <input class="participant" type="number" min="2" max="6" value="2" required>
-                </div>
-            </td>
-            <td class="singlePrice">25 €</td>
+            <td>Harry Potter</td>
+            <td><input type="number" name="qty" value="0" min="2" max="6" id="harry" required></td>
+            <td><input type="text" name="price" value="25"></td>
             <td><label>
-                <input type="text" name="date" class="form-control datepicker" required>
+                <input type="text" name="date" class="form-control datepicker" id="date1">
             </label>
 
                 <script type="text/javascript">
@@ -111,73 +76,85 @@
                     });
 
                 </script>
+
             </td>
-            <td class="totalPrice">200 €</td>
+            <td><input type="text" name="item_total" value="" jAutoCalc="{qty} * {price}"></td>
+        </tr>
+        <tr class="line_items">
             <td>
-                <div>
-                    <input type="submit" class="btn" value="Book Now">
-                </div>
+                <button class="row-remove-paranormal" type="reset">Remove</button>
             </td>
-            </form>
+            <td>
+                <input type="time" name="limittime" list="limittimeslist" required>
+
+            </td>
+            <td>Paranormal Activity</td>
+            <td><input type="number" name="qty" value="0" min="2" max="6" id="paranormal"></td>
+            <td><input type="text" name="price" value="10"></td>
+            <td><label>
+                <input type="text" name="date" class="form-control datepicker" id="datess" required>
+            </label>
+
+            </td>
+            <td><input type="text" name="item_total" value="" jAutoCalc="{qty} * {price}"></td>
         </tr>
 
         <tr>
-            <form action="shop.html" method="get" target="_blank">
-            <td>Online</td>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>Quantity</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+
+
+        <tr class="line_items">
+            <td>
+                <button class="row-remove-jigsaw" type="reset">Remove</button>
+            </td>
+            <td></td>
             <td>Jigsaw</td>
-            <td>
-
-            </td>
-            <td class="singlePrice">25 €</td>
+            <td><input type="number" name="qty" value="0" min="1" max="10" id="jigsaw"></td>
+            <td><input type="text" name="price" value="20"></td>
             <td></td>
-            <td class="totalPrice">200 €</td>
-            <td>
-                <div>
-                    <input type="submit" class="btn" value="Book Now">
-                </div>
-            </td>
-            </form>
+            <td><input type="text" name="item_total" value="" jAutoCalc="{qty} * {price}"></td>
         </tr>
-
-        <tr>
-            <form action="shop.html" method="get" target="_blank">
-            <td>Online</td>
+        <tr class="line_items">
+            <td>
+                <button class="row-remove-avenger" type="reset">Remove</button>
+            </td>
+            <td></td>
             <td>Avenger</td>
-            <td>
-
-            </td>
-            <td class="singlePrice">25 €</td>
+            <td><input type="number" name="qty" value="0" min="1" max="10" id="avenger"></td>
+            <td><input type="text" name="price" value="25"></td>
             <td></td>
-            <td class="totalPrice">200 €</td>
+            <td><input type="text" name="item_total" value="" jAutoCalc="{qty} * {price}"></td>
+        </tr>
+        <tr class="line_items">
             <td>
-                <div>
-                    <input type="submit" class="btn" value="Book Now">
-                </div>
+                <button class="row-remove-inception" type="reset">Remove</button>
             </td>
-            </form>
+            <td></td>
+            <td>Inception</td>
+            <td><input type="number" name="qty" value="0" min="1" max="10" id="inception"></td>
+            <td><input type="text" name="price" value="50"></td>
+            <td></td>
+            <td><input type="text" name="item_total" value="" jAutoCalc="{qty} * {price}"></td>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+            <td>Subtotal</td>
+
+            <td><input type="text" name="sub_total" value="" jAutoCalc="SUM({item_total})"></td>
         </tr>
 
         <tr>
-            <form action="shop.html" method="get" target="_blank">
-            <td>VR</td>
-            <td>Inception</td>
-            <td>
-            </td>
-            <td class="singlePrice">25 €</td>
-            <td></td>
-            <td class="totalPrice">200 €</td>
-            <td>
-                <div>
-                    <input type="submit" class="btn" value="Book Now">
-                </div>
-            </td>
-            </form>
+            <td><input type="submit" class="btn" value="Book Now"></td>
+
         </tr>
-
-
     </table>
-</div>
-
-
+</form>
 </body>
 </html>
