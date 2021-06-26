@@ -319,4 +319,34 @@ w*{
         font-size: 15px;
         color: #750707;
     }
+
 }
+
+#button{
+    box-shadow:inset 0px 1px 3px 0px #91b8b3;
+    background:linear-gradient(to bottom, #750707 5%, #000000 100%);
+    background-color:#750707;
+    border-radius:60px;
+    border:1px solid #566963;
+    display:inline-block;
+    cursor:pointer;
+    color:white;
+    font-family:Calibri;
+    font-size:15px;
+    font-weight:bold;
+    padding:9px 23px;
+    text-decoration:none;
+    text-shadow:0px -1px 0px #2b665e;
+    margin-left: 130px;
+    position: fixed;
+
+}
+#search{
+    width: 130px;
+    height: 40px;
+    border:1px solid #566963;
+    position: fixed;
+    border-radius:10px;
+
+}
+

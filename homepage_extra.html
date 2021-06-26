@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="headerfooter.css">
     <link rel="stylesheet" href="index.css">
+    <script src="test.js"></script>
     <title>Hompepage</title>
 
 </head>
@@ -27,13 +28,10 @@
             </div>
 
             <div class="header_third container" >
-                <form action="/" method="GET" class="form">
-                    <input type="search" placeholder="Search" class="search-field"/>
-                    <button type="submit" class="search-button">
-                        <img src="resources/search.png" class="searchimage" srcset="resources/search.png 256w,
-        resources/search.png 1024w, resources/search.png 2048w" sizes="(max-width: 300px) 500px, 500px" alt="Search Field">
-                    </button>
-                </form>
+
+                <input type="text" id="search">
+                <input type="hidden" id="hid_search">
+                <input type="button" id="button" onmousedown="doSearch(document.getElementById('search').value)" value="Search">
             </div>
 
             <div class="buttons">
@@ -47,6 +45,7 @@
     </div>
 </header>
 <main>
+    <div id="content">
 <div class="maindiv">
     <div>
         <h2>ARE YOU READY FOR AN INCREDIBLE ADVENTURE?</h2><br>
@@ -236,7 +235,7 @@
         </div>
 
     </div>
-
+    </div>
 </main>
 <footer>
 

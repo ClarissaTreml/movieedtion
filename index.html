@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="headerfooter.css">
     <link rel="stylesheet" href="index.css">
     <script src="searchbar.js"></script>
+    <script src="test.js"></script>
     <title>Hompepage</title>
 
 
@@ -30,13 +31,10 @@
             </div>
 
             <div class="header_third container" >
-                <form action="/" method="GET" class="form">
-                    <input type="search" placeholder="Search" class="search-field"/>
-                    <button type="submit" class="search-button">
-                        <img src="resources/search.png" class="searchimage" srcset="resources/search.png 256w,
-        resources/search.png 1024w, resources/search.png 2048w" sizes="(max-width: 300px) 500px, 500px" alt="Search Field">
-                    </button>
-                </form>
+
+                <input type="text" id="search">
+                <input type="hidden" id="hid_search">
+                <input type="button" id="button" onmousedown="doSearch(document.getElementById('search').value)" value="Search">
             </div>
 
             <div class="buttons">
@@ -50,13 +48,26 @@
     </div>
 </header>
 <main>
+    <div id="content">
 <div class="maindiv">
     <div>
         <h2>ARE YOU READY FOR AN INCREDIBLE ADVENTURE?</h2><br>
     </div>
 
     <div  onclick="myFunction()"><img class="popup" src="resources/newsletter.png" alt="newsletterbutton"></div>
+    <script language="javascript">
+        var popupWindow = null;
+        function centeredPopup(url,winName,w,h,scroll){
+            LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+            TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+            settings =
+                'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+            popupWindow = window.open(url,winName,settings)
+        }
+    </script>
+    <p><a href="http://localhost:3000/" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false"><img class="popup" src="resources/newsletter.png" alt="newsletterbutton"></a></p>
 
+</div>
     <div class="intro" auto>
             <video class="video1" autoplay loop controls>
                 <source src="resources/escaperoom.mp4" type="video/mp4"></video>
@@ -237,7 +248,7 @@
         </div>
 
     </div>
-
+    </div>
 </main>
 <footer>
 
